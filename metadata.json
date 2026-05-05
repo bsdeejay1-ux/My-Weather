@@ -1,0 +1,8 @@
+{
+  "name": "My Weather",
+  "description": "A beautiful Real-Time Weather and Time application featuring Cyberpunk aesthetics and 5-day forecasts.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}

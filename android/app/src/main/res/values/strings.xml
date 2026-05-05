@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TitanApp</string>
+    <string name="title_activity_main">TitanApp</string>
+    <string name="package_name">com.rvk.titan</string>
+    <string name="custom_url_scheme">com.rvk.titan</string>
+</resources>

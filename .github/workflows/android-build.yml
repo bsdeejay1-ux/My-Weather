@@ -15,12 +15,12 @@ jobs:
     - name: Build Asli Next.js Source
       run: |
         npm install
-        npm run build  # Yeh 'out' folder banayega
+        npm run build
         
     - name: Capacitor Sync
       run: |
         npm install -g @capacitor/cli
-        # Hack: Agar out folder hai toh usko www bana do Capacitor ke liye
+        npm install @capacitor/core @capacitor/android # <--- YEH LINE MISS THI
         rm -rf www
         cp -r out www
         npx cap sync android

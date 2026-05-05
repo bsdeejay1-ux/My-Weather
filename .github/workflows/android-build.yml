@@ -10,9 +10,12 @@ jobs:
     - uses: actions/setup-java@v4
       with: { distribution: 'temurin', java-version: '21' }
     - run: npm install
-    # Yeh nayi line server ko Capacitor sikha degi!
     - run: npm install -g @capacitor/cli && npm install @capacitor/core @capacitor/android
     - run: npm run build
+    
+    # YEH RAHI MASTER HACK LINE (out folder ko www bana do)
+    - run: rm -rf www && mv out www
+    
     - run: npx cap sync android
     - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
     - uses: actions/upload-artifact@v4
